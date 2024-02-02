@@ -66,14 +66,53 @@ function even (a){
 
 
 // odd Number
-function even (a){
-    if(a % 2 === 1){
-        return true
-    }
-        return false
-}
+// function even (a){
+//     if(a % 2 === 1){
+//         return true
+//     }
+//         return false
+// }
 
-let evenNum = even(10)
-let evenNum2 = even(11)
-console.log(evenNum)
-console.log(evenNum2)
+// let evenNum = even(10)
+// let evenNum2 = even(11)
+// console.log(evenNum)
+// console.log(evenNum2)
+
+
+
+
+
+// string function
+function str (str){
+    let strlen = str.length;
+    // console.log(strlen)
+    if(strlen % 2 === 0){
+        return true
+    }else{
+        return false
+    }
+
+}
+let string = str("Dhake")
+let strings = str("Bangladesh")
+// console.log(string)
+// console.log(strings)
+
+
+
+
+
+
+// doduble 
+function doduble(num,boolean){
+    if(boolean){
+        console.log("result dubole")
+        return num * 2;
+    }else{
+        return num * 3
+    }
+}
+let dublole1 = doduble(10, true)
+let dublole2 = doduble(10, false)
+console.log(dublole1)
+console.log(dublole2)
