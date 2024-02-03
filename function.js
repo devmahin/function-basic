@@ -16,7 +16,7 @@
 // function argument(par1, par2){
 //     let multiplication = par1 * par2;
 //     return multiplication;
-    
+
 // }
 // let store = argument(20,30)
 // console.log(store)
@@ -51,11 +51,11 @@
 
 
 
-function even (a){
-    if(a % 2 === 0){
+function even(a) {
+    if (a % 2 === 0) {
         return true
     }
-        return false
+    return false
 }
 // let evenNum = even(10)
 // let evenNum2 = even(11)
@@ -83,12 +83,12 @@ function even (a){
 
 
 // string function
-function str (str){
+function str(str) {
     let strlen = str.length;
     // console.log(strlen)
-    if(strlen % 2 === 0){
+    if (strlen % 2 === 0) {
         return true
-    }else{
+    } else {
         return false
     }
 
@@ -104,15 +104,76 @@ let strings = str("Bangladesh")
 
 
 // doduble 
-function doduble(num,boolean){
-    if(boolean){
+function doduble(num, boolean) {
+    if (boolean) {
         console.log("result dubole")
         return num * 2;
-    }else{
+    } else {
         return num * 3
     }
 }
 let dublole1 = doduble(10, true)
 let dublole2 = doduble(10, false)
-console.log(dublole1)
-console.log(dublole2)
+// console.log(dublole1)
+// console.log(dublole2)
+
+
+
+
+
+// array 
+
+function funArray(arr) {
+    const arrLen = arr.length;
+    // console.log(arrLen)
+}
+funArray([1, 2, 3, 4, 5, 6, 7, 8])
+
+
+
+function sums(arr) {
+    // console.log(arr)
+    let sumRet = 0;
+    for (let a of arr) {
+        // console.log(a)
+        sumRet += a;
+        // console.log(sumRet)
+    }
+    return sumRet;
+
+}
+
+let array = [20, 40, 50]
+let sum = sums(array)
+console.log(sum)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function even
+function evenSum(e) {
+    let sums = 0;
+    for (let eve of e) {
+        if (eve % 2 === 0) {
+            sums+= eve
+            
+        }
+    }
+    return sums;
+
+}
+let arrayEven = [10, 11, 33, 54, 6, 90]
+
+let evensum = evenSum(arrayEven)
+console.log(evensum)
